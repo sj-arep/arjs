@@ -17,6 +17,10 @@
                 overflow: hidden;
                 position: relative;
             }
+            #ar {
+                height: 100%;
+                width: 100%;
+            }
             #info {
                 position: absolute;
                 bottom: 0;
@@ -30,46 +34,48 @@
         <div id="info">
             xx
         </div>
-        <a-scene
-            vr-mode-ui="enabled: false"
-            embedded
-            arjs='sourceType: webcam; sourceWidth: 1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>            
-            <a-camera gps-camera rotation-reader></a-camera>
+        <div id="ar">
+            <a-scene
+                vr-mode-ui="enabled: false"
+                embedded
+                arjs='sourceType: webcam; sourceWidth: 1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>            
+                <a-camera gps-camera rotation-reader></a-camera>
 
-            <a-text value="Conférence (RDC)" gps-entity-place="longitude: 2.368162; latitude: 48.822583;"></a-text>
-            <a-text value="Saint-Lazare (RDC)" gps-entity-place="longitude: 2.368589; latitude: 48.822659;"></a-text>
-            <a-text value="Auditoriium (RDC)" gps-entity-place="longitude: 2.368539; latitude: 48.822522;"></a-text>
-            <a-text value="Le cube (RDC)" gps-entity-place="longitude: 2.368377; latitude: 48.822295;"></a-text>
-            <a-text value="L'atelier' (RDC)" gps-entity-place="longitude: 2.368216; latitude: 48.822371;"></a-text>
-            <a-text value="Austerlitz (RDC)" gps-entity-place="longitude: 2.368809; latitude: 48.822236;"></a-text>
+                <a-text value="Conférence (RDC)" gps-entity-place="longitude: 2.368162; latitude: 48.822583;"></a-text>
+                <a-text value="Saint-Lazare (RDC)" gps-entity-place="longitude: 2.368589; latitude: 48.822659;"></a-text>
+                <a-text value="Auditoriium (RDC)" gps-entity-place="longitude: 2.368539; latitude: 48.822522;"></a-text>
+                <a-text value="Le cube (RDC)" gps-entity-place="longitude: 2.368377; latitude: 48.822295;"></a-text>
+                <a-text value="L'atelier' (RDC)" gps-entity-place="longitude: 2.368216; latitude: 48.822371;"></a-text>
+                <a-text value="Austerlitz (RDC)" gps-entity-place="longitude: 2.368809; latitude: 48.822236;"></a-text>
 
-            <a-text value="Belvédère 1 (R+1)" z-offset=10 gps-entity-place="longitude: 2.368354; latitude: 48.822583;"></a-text>
-            <a-text value="Porta Susa (R+1)" z-offset=10 gps-entity-place="longitude: 2.367828; latitude: 48.822494;"></a-text>
-            <a-text value="Shanghai (R+1)" z-offset=10 gps-entity-place="longitude: 2.368598; latitude: 48.822224;"></a-text>
-            <a-text value="Casa-Port (R+1)" z-offset=10 gps-entity-place="longitude: 2.368546; latitude: 48.822188;"></a-text>
-            <a-text value="Wuhan (R+1)" z-offset=10 gps-entity-place="longitude: 2.368216; latitude: 48.822371;"></a-text>
-            <a-text value="Bruxelles-Schuman (R+1)" z-offset=10 gps-entity-place="longitude: 2.368809; latitude: 48.822236;"></a-text>
-            <a-text value="Mumbai (R+1)" z-offset=10 gps-entity-place="longitude: 2.368921; latitude: 48.822048;"></a-text>
+                <a-text value="Belvédère 1 (R+1)" z-offset=10 gps-entity-place="longitude: 2.368354; latitude: 48.822583;"></a-text>
+                <a-text value="Porta Susa (R+1)" z-offset=10 gps-entity-place="longitude: 2.367828; latitude: 48.822494;"></a-text>
+                <a-text value="Shanghai (R+1)" z-offset=10 gps-entity-place="longitude: 2.368598; latitude: 48.822224;"></a-text>
+                <a-text value="Casa-Port (R+1)" z-offset=10 gps-entity-place="longitude: 2.368546; latitude: 48.822188;"></a-text>
+                <a-text value="Wuhan (R+1)" z-offset=10 gps-entity-place="longitude: 2.368216; latitude: 48.822371;"></a-text>
+                <a-text value="Bruxelles-Schuman (R+1)" z-offset=10 gps-entity-place="longitude: 2.368809; latitude: 48.822236;"></a-text>
+                <a-text value="Mumbai (R+1)" z-offset=10 gps-entity-place="longitude: 2.368921; latitude: 48.822048;"></a-text>
 
-            <a-text value="Belvédère 2 (R+2)" z-offset=20 gps-entity-place="longitude: 2.368354; latitude: 48.822583;"></a-text>
-            <a-text value="Juvisy (R+2)" z-offset=20 gps-entity-place="longitude: 2.367828; latitude: 48.822494;"></a-text>
-            <a-text value="Créteil-Pompadour (R+2)" z-offset=20 gps-entity-place="longitude: 2.368680; latitude: 48.822278;"></a-text>
-            <a-text value="Versailles-Chantier (R+2)" z-offset=20 gps-entity-place="longitude: 2.368641; latitude: 48.822254;"></a-text>
+                <a-text value="Belvédère 2 (R+2)" z-offset=20 gps-entity-place="longitude: 2.368354; latitude: 48.822583;"></a-text>
+                <a-text value="Juvisy (R+2)" z-offset=20 gps-entity-place="longitude: 2.367828; latitude: 48.822494;"></a-text>
+                <a-text value="Créteil-Pompadour (R+2)" z-offset=20 gps-entity-place="longitude: 2.368680; latitude: 48.822278;"></a-text>
+                <a-text value="Versailles-Chantier (R+2)" z-offset=20 gps-entity-place="longitude: 2.368641; latitude: 48.822254;"></a-text>
 
-            <a-text value="Belvédère 3 (R+3)" z-offset=30 gps-entity-place="longitude: 2.368354; latitude: 48.822583;"></a-text>
-            <a-text value="Marseille Saint-Charles (R+3)" z-offset=30 gps-entity-place="longitude: 2.367828; latitude: 48.822494;"></a-text>
-            <a-text value="Lille Flandres (R+3)" z-offset=30 gps-entity-place="longitude: 2.368668; latitude: 48.822272;"></a-text>
-            <a-text value="Belfort TGV (R+3)" z-offset=30 gps-entity-place="longitude: 2.368715; latitude: 48.822323;"></a-text>
-            <a-text value="Bordeaux Saint-Jean (R+3)" z-offset=30 gps-entity-place="longitude: 2.368747; latitude: 48.822360;"></a-text>
+                <a-text value="Belvédère 3 (R+3)" z-offset=30 gps-entity-place="longitude: 2.368354; latitude: 48.822583;"></a-text>
+                <a-text value="Marseille Saint-Charles (R+3)" z-offset=30 gps-entity-place="longitude: 2.367828; latitude: 48.822494;"></a-text>
+                <a-text value="Lille Flandres (R+3)" z-offset=30 gps-entity-place="longitude: 2.368668; latitude: 48.822272;"></a-text>
+                <a-text value="Belfort TGV (R+3)" z-offset=30 gps-entity-place="longitude: 2.368715; latitude: 48.822323;"></a-text>
+                <a-text value="Bordeaux Saint-Jean (R+3)" z-offset=30 gps-entity-place="longitude: 2.368747; latitude: 48.822360;"></a-text>
 
 
-            <!-- <a-text value="Salle de réunion" gps-entity-place="longitude: 2.368675; latitude: 48.822390;"></a-text>
-            <a-text value="Lille-Flandres" gps-entity-place="longitude: 2.368542; latitude: 48.822400;"></a-text>            
-            <a-text value="Bordeaux St-Jean" gps-entity-place="longitude: 2.368421; latitude: 48.822421;"></a-text>            
-            <a-text value="Belvédère Atrium" gps-entity-place="longitude: 2.368345; latitude: 48.822488;"></a-text> -->
+                <!-- <a-text value="Salle de réunion" gps-entity-place="longitude: 2.368675; latitude: 48.822390;"></a-text>
+                <a-text value="Lille-Flandres" gps-entity-place="longitude: 2.368542; latitude: 48.822400;"></a-text>            
+                <a-text value="Bordeaux St-Jean" gps-entity-place="longitude: 2.368421; latitude: 48.822421;"></a-text>            
+                <a-text value="Belvédère Atrium" gps-entity-place="longitude: 2.368345; latitude: 48.822488;"></a-text> -->
 
-            <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" gps-entity-place="longitude: 2.368675; latitude: 48.822390;" ></a-cylinder> -->
-            <!-- <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 2.368837; latitude: 48.822424;" animation-mixer/> -->
-        </a-scene>
+                <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" gps-entity-place="longitude: 2.368675; latitude: 48.822390;" ></a-cylinder> -->
+                <!-- <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 2.368837; latitude: 48.822424;" animation-mixer/> -->
+            </a-scene>
+        </div>
     </body>
 </html>
